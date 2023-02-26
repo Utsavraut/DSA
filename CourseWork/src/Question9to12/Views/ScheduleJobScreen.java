@@ -28,9 +28,11 @@ public class ScheduleJobScreen extends JFrame implements ActionListener {
         constraints.gridx = 0;
         constraints.gridy = 0;
         add(jobIdLabel, constraints);
+        jobIdLabel.setForeground(Color.red);
 
         jobIdComboBox = new JComboBox<String>();
         jobIdComboBox.addItem("Select Job ID");
+
         // Add job IDs to the combo box
         // Add job IDs to the combo box
         try {
@@ -59,6 +61,7 @@ public class ScheduleJobScreen extends JFrame implements ActionListener {
         constraints.gridx = 0;
         constraints.gridy = 1;
         add(startTimeLabel, constraints);
+        startTimeLabel.setForeground(Color.red);
 
         Date date = new Date();
         SpinnerDateModel spinnerModel = new SpinnerDateModel(date, null, null, Calendar.SECOND);
@@ -81,6 +84,8 @@ public class ScheduleJobScreen extends JFrame implements ActionListener {
         constraints.gridx = 0;
         constraints.gridy = 2;
         add(backButton, constraints);
+        backButton.setForeground(Color.white);
+        backButton.setBackground(Color.black);
 
         setTitle("Schedule Job Screen");
         setSize(400, 250);

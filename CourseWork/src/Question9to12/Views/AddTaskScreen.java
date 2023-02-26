@@ -31,6 +31,7 @@ public class AddTaskScreen extends JFrame implements ActionListener {
         constraints.gridx = 0;
         constraints.gridy = 0;
         add(jobIdLabel, constraints);
+        jobIdLabel.setForeground(Color.red);
 
         jobIdComboBox = new JComboBox();
         jobIdComboBox.addItem("Select Job ID");
@@ -61,6 +62,7 @@ public class AddTaskScreen extends JFrame implements ActionListener {
         constraints.gridx = 0;
         constraints.gridy = 1;
         add(task1Label, constraints);
+        task1Label.setForeground(Color.red);
 
         task1ComboBox = new JComboBox();
         task1ComboBox.addItem("Select Task");
@@ -86,6 +88,8 @@ public class AddTaskScreen extends JFrame implements ActionListener {
         constraints.gridx = 0;
         constraints.gridy = 2;
         add(task2Label, constraints);
+        task2Label.setForeground(Color.red);
+
 
         task2ComboBox = new JComboBox();
         task2ComboBox.addItem("Select Task");
@@ -113,12 +117,17 @@ public class AddTaskScreen extends JFrame implements ActionListener {
         constraints.gridx = 1;
         constraints.gridy = 3;
         add(addTaskButton, constraints);
+        addTaskButton.setForeground(Color.white);
+        addTaskButton.setBackground(Color.black);
 
         backButton = new JButton("Go Back");
         backButton.addActionListener(this);
         constraints.gridx = 0;
         constraints.gridy = 3;
         add(backButton, constraints);
+        backButton.setForeground(Color.white);
+        backButton.setBackground(Color.black);
+
 
         setTitle("Add Task Screen");
         setSize(400, 250);

@@ -32,6 +32,7 @@ public class AddTask extends JFrame implements ActionListener {
         constraints.gridx = 0;
         constraints.gridy = 0;
         add(taskIdLabel, constraints);
+        taskIdLabel.setForeground(Color.red);
 
 
         taskIdField = new JTextField(20);
@@ -43,6 +44,7 @@ public class AddTask extends JFrame implements ActionListener {
         constraints.gridx = 0;
         constraints.gridy = 1;
         add(taskNameLabel, constraints);
+        taskNameLabel.setForeground(Color.red);
 
         taskNameField = new JTextField(20);
         constraints.gridx = 1;
@@ -54,12 +56,16 @@ public class AddTask extends JFrame implements ActionListener {
         constraints.gridx = 0;
         constraints.gridy = 2;
         add(addTaskButton, constraints);
+        addTaskButton.setForeground(Color.white);
+        addTaskButton.setBackground(Color.black);
 
         goBackButton = new JButton("Go Back");
         goBackButton.addActionListener(this);
         constraints.gridx = 1;
         constraints.gridy = 2;
         add(goBackButton, constraints);
+        goBackButton.setForeground(Color.white);
+        goBackButton.setBackground(Color.black);
 
         setTitle("Add Task");
         setSize(400, 200);
